@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Management — Service Packages 2026 · Prepared for Rotary E-Club of East Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0b0d;
+    --bg-elev: #121217;
+    --bg-card: #15151b;
+    --ink: #f4f1ea;
+    --ink-dim: #a8a59d;
+    --ink-mute: #6c6962;
+    --accent: #f7a81b;          /* Rotary gold */
+    --accent-soft: #d99000;     /* Darker gold */
+    --rotary-blue: #17458f;     /* Rotary royal blue */
+    --rotary-blue-soft: #2b5cab;
+    --rule: #26262d;
+    --rule-bright: #3a3a44;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Subtle grain overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+
+  /* ---------- Typography ---------- */
+  .display {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+  }
+
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- Top strip ---------- */
+  .top-bar {
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(11, 11, 13, 0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+
+  .top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .wordmark span { color: var(--accent); }
+
+  .top-meta {
+    display: flex;
+    gap: 32px;
+    color: var(--ink-dim);
+  }
+
+  @media (max-width: 640px) {
+    .top-meta { display: none; }
+  }
+
+  /* ---------- Hero / Cover ---------- */
+  .hero {
+    padding: 140px 0 120px;
+    position: relative;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: end;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 8vw, 6.8rem);
+    margin-bottom: 40px;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 300;
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--ink-dim);
+    max-width: 48ch;
+    line-height: 1.75;
+  }
+
+  .hero-stamp {
+    text-align: right;
+    color: var(--ink-mute);
+    line-height: 1.8;
+  }
+
+  .hero-stamp .mono + .mono { margin-top: 6px; }
+
+  @media (max-width: 768px) {
+    .hero { padding: 80px 0 60px; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-stamp { text-align: left; }
+  }
+
+  /* ---------- Section base ---------- */
+  section { padding: 100px 0; border-bottom: 1px solid var(--rule); }
+
+  .section-head {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 60px;
+    margin-bottom: 72px;
+    align-items: baseline;
+  }
+
+  .section-head .eyebrow { padding-top: 8px; }
+
+  .section-title {
+    font-size: clamp(2rem, 4.2vw, 3.2rem);
+    max-width: 22ch;
+  }
+
+  .intro-body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 60px;
+  }
+
+  .intro-body > div:first-child { }
+
+  .intro-text {
+    font-size: 1.15rem;
+    color: var(--ink-dim);
+    max-width: 62ch;
+    line-height: 1.8;
+  }
+
+  .intro-text p + p { margin-top: 22px; }
+  .intro-text strong { color: var(--ink); font-weight: 500; }
+
+  @media (max-width: 768px) {
+    section { padding: 60px 0; }
+    .section-head, .intro-body { grid-template-columns: 1fr; gap: 20px; }
+  }
+
+  /* ---------- Package cards ---------- */
+  .packages {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--rule);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pkg {
+    background: var(--bg);
+    padding: 80px 0;
+    transition: background 0.4s ease;
+    position: relative;
+  }
+
+  .pkg:hover { background: var(--bg-elev); }
+
+  .pkg-inner {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 80px;
+  }
+
+  .pkg-side {
+    position: sticky;
+    top: 120px;
+    align-self: start;
+  }
+
+  .pkg-number {
+    font-family: 'Fraunces', serif;
+    font-size: 5.5rem;
+    line-height: 1;
+    color: var(--accent);
+    font-weight: 300;
+    margin-bottom: 18px;
+    letter-spacing: -0.04em;
+  }
+
+  .pkg-name {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+
+  .pkg-price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-bottom: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  .pkg-price .small {
+    color: var(--ink-mute);
+    font-size: 0.85rem;
+  }
+
+  .pkg-platforms {
+    padding-top: 20px;
+    border-top: 1px solid var(--rule-bright);
+  }
+
+  .pkg-platforms .mono { color: var(--ink-mute); margin-bottom: 8px; display: block; }
+
+  .pkg-platforms-list {
+    color: var(--ink-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .pkg-main h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 1.35;
+    margin-bottom: 40px;
+    color: var(--ink);
+    max-width: 28ch;
+    letter-spacing: -0.01em;
+  }
+
+  .deliverables {
+    list-style: none;
+    border-top: 1px solid var(--rule);
+  }
+
+  .deliverables li {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+
+  .deliverables li .idx {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--ink-mute);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  .deliverables li .body {
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .deliverables li .body .tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-right: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  .pkg-footnote {
+    margin-top: 36px;
+    padding: 20px 24px;
+    background: var(--bg-card);
+    border-left: 2px solid var(--accent);
+    color: var(--ink-dim);
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .pkg-footnote strong { color: var(--ink); font-weight: 500; }
+
+  @media (max-width: 900px) {
+    .pkg-inner { grid-template-columns: 1fr; gap: 40px; }
+    .pkg-side { position: static; }
+    .pkg-number { font-size: 3.5rem; }
+    .deliverables li { grid-template-columns: 44px 1fr; gap: 12px; }
+  }
+
+  /* ---------- Comparison table ---------- */
+  .compare {
+    overflow-x: auto;
+    margin-top: 24px;
+  }
+
+  .compare table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 680px;
+  }
+
+  .compare th, .compare td {
+    text-align: left;
+    padding: 22px 20px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  .compare thead th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    font-weight: 500;
+    padding-bottom: 16px;
+    padding-top: 0;
+  }
+
+  .compare thead th.tier {
+    color: var(--accent);
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+  }
+
+  .compare tbody th {
+    font-weight: 400;
+    color: var(--ink-dim);
+    font-size: 0.9rem;
+  }
+
+  .compare td {
+    color: var(--ink);
+    font-size: 0.95rem;
+    font-weight: 300;
+  }
+
+  .compare td.price {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ---------- Terms ---------- */
+  .terms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+
+  .term {
+    background: var(--bg);
+    padding: 40px 32px;
+    min-height: 240px;
+  }
+
+  .term .num {
+    font-family: 'Fraunces', serif;
+    font-size: 2.4rem;
+    color: var(--accent);
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .term h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    color: var(--ink);
+  }
+
+  .term p {
+    color: var(--ink-dim);
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  @media (max-width: 768px) {
+    .terms-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Closing ---------- */
+  .closing {
+    padding: 140px 0 80px;
+    border-bottom: none;
+  }
+
+  .closing-title {
+    font-size: clamp(2.4rem, 6vw, 4.8rem);
+    max-width: 18ch;
+    margin-bottom: 80px;
+  }
+
+  .closing-title em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 300;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding-top: 40px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .contact-item .mono {
+    color: var(--ink-mute);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .contact-item .val {
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
+    color: var(--ink);
+  }
+
+  footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    color: var(--ink-mute);
+  }
+
+  @media (max-width: 640px) {
+    .container { padding: 0 24px; }
+    footer { flex-direction: column; gap: 12px; }
+  }
+
+  /* ---------- Rotary logo containers ---------- */
+  .logo-plate {
+    display: inline-flex;
+    align-items: center;
+  }
+  .logo-plate img { display: block; }
+
+  .hero-lockup {
+    display: block;
+    margin: 0 -96px 56px auto;
+    max-width: 640px;
+    width: 100%;
+  }
+  .hero-lockup img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 900px) {
+    .hero-lockup { margin-right: -24px; max-width: 480px; }
+  }
+  @media (max-width: 640px) {
+    .hero-lockup { margin-right: 0; margin-left: auto; max-width: 100%; }
+  }
+
+  .rotary-accent-bar {
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: var(--rotary-blue-soft);
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  /* ---------- Floating tier cards ---------- */
+  .tiers-section {
+    padding: 120px 0;
+    background:
+      radial-gradient(1200px 500px at 20% 0%, rgba(247, 168, 27, 0.06), transparent 60%),
+      radial-gradient(900px 500px at 90% 100%, rgba(23, 69, 143, 0.14), transparent 60%),
+      var(--bg);
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+  }
+
+  .tier-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 20px;
+    perspective: 1200px;
+  }
+
+  .tier-card {
+    background: linear-gradient(180deg, #17171d 0%, #111116 100%);
+    border: 1px solid var(--rule-bright);
+    border-radius: 6px;
+    padding: 40px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease;
+    box-shadow:
+      0 4px 14px rgba(0, 0, 0, 0.35),
+      0 22px 60px -20px rgba(0, 0, 0, 0.55);
+    min-height: 420px;
+  }
+
+  .tier-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 48px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 0 0 2px 0;
+  }
+
+  .tier-card.featured::before {
+    background: var(--rotary-blue-soft);
+    width: 100%;
+    height: 3px;
+  }
+
+  .tier-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow:
+      0 8px 22px rgba(0, 0, 0, 0.4),
+      0 30px 70px -20px rgba(247, 168, 27, 0.25);
+  }
+
+  .tier-card .tier-no {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .tier-card .tier-name {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+    color: var(--ink);
+  }
+
+  .tier-card .tier-tagline {
+    color: var(--ink-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    min-height: 3em;
+  }
+
+  .tier-card .tier-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2.6rem;
+    color: var(--accent);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .tier-card.featured .tier-price {
+    color: var(--accent);
+  }
+
+  .tier-card .tier-price-unit {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--ink-mute);
+    letter-spacing: 0.15em;
+    margin-bottom: 28px;
+  }
+
+  .tier-card .tier-highlights {
+    list-style: none;
+    margin-top: auto;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .tier-card .tier-highlights li {
+    display: flex;
+    gap: 12px;
+    padding: 9px 0;
+    font-size: 0.9rem;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+
+  .tier-card .tier-highlights li::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+
+  .tier-card.featured .tier-highlights li::before {
+    background: var(--rotary-blue-soft);
+  }
+
+  .tier-card .tier-cta {
+    margin-top: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    transition: gap 0.3s ease, color 0.3s ease;
+  }
+
+  .tier-card .tier-cta::after {
+    content: '→';
+    transition: transform 0.3s ease;
+  }
+
+  .tier-card:hover .tier-cta { gap: 16px; }
+
+  .tier-card.featured {
+    transform: translateY(-14px);
+  }
+
+  .tier-card.featured:hover {
+    transform: translateY(-20px);
+  }
+
+  .tier-card .tier-badge {
+    position: absolute;
+    top: -18px;
+    right: 28px;
+    background: var(--rotary-blue);
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 50;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  @media (max-width: 900px) {
+    .tier-cards {
+      grid-template-columns: repeat(3, minmax(260px, 1fr));
+      gap: 18px;
+      overflow-x: auto;
+      overflow-y: visible;
+      padding: 18px 4px 28px;
+      margin: 2px -4px 0;
+      scroll-snap-type: x proximity;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tier-card {
+      min-width: 260px;
+      min-height: 390px;
+      padding: 32px 24px 28px;
+      scroll-snap-align: start;
+    }
+    .tier-card.featured { transform: translateY(-8px); }
+    .tier-card.featured:hover { transform: translateY(-12px); }
+  }
+
+  @media (max-width: 640px) {
+    .tier-cards {
+      grid-template-columns: repeat(3, minmax(235px, 1fr));
+      gap: 14px;
+      padding-bottom: 24px;
+    }
+    .tier-card {
+      min-width: 235px;
+      min-height: 360px;
+      padding: 28px 20px 24px;
+    }
+    .tier-card .tier-name { font-size: 1.55rem; }
+    .tier-card .tier-price { font-size: 2.15rem; }
+    .tier-card .tier-badge { right: 16px; padding: 9px 14px; letter-spacing: 0.16em; }
+  }
+
+  /* ---------- Signature block (Brian) ---------- */
+  .signature-block {
+    padding: 72px 0 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 80px;
+    position: relative;
+  }
+
+  .signature-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: end;
+    position: relative;
+    min-height: 820px;
+  }
+
+  .signature-left {
+    align-self: end;
+    padding-bottom: 24px;
+    max-width: 540px;
+  }
+
+  .signature-meta {
+    margin-bottom: 40px;
+  }
+  .signature-meta .eyebrow { margin-bottom: 18px; }
+  .signature-name {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2.2rem, 4.2vw, 2.8rem);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+    line-height: 1.05;
+  }
+  .signature-role {
+    color: var(--ink-dim);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 52ch;
+  }
+
+  .signature-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 56px;
+  }
+  .signature-contact .mono {
+    color: var(--ink-mute);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .signature-contact .val {
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
+    color: var(--ink);
+  }
+
+  .signature-portrait-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 820px;
+    overflow: visible;
+  }
+
+  /* animated glowing mesh gradient in Rotary colors */
+  .signature-mesh {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    width: 620px;
+    height: 620px;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(44px);
+    opacity: 0.8;
+    animation: meshDrift 14s ease-in-out infinite alternate;
+  }
+  .signature-mesh::before,
+  .signature-mesh::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+  }
+  .signature-mesh::before {
+    background:
+      radial-gradient(circle at 30% 55%, rgba(23, 69, 143, 0.75), transparent 55%),
+      radial-gradient(circle at 72% 62%, rgba(247, 168, 27, 0.55), transparent 55%),
+      radial-gradient(circle at 50% 85%, rgba(43, 92, 171, 0.6), transparent 60%);
+    animation: meshSpinA 18s linear infinite;
+  }
+  .signature-mesh::after {
+    background:
+      radial-gradient(circle at 65% 40%, rgba(247, 168, 27, 0.38), transparent 50%),
+      radial-gradient(circle at 25% 70%, rgba(23, 69, 143, 0.45), transparent 55%);
+    animation: meshSpinB 24s linear infinite reverse;
+    mix-blend-mode: screen;
+  }
+
+  @keyframes meshDrift {
+    0%   { transform: translateX(-50%) translateY(0) scale(1); }
+    50%  { transform: translateX(-48%) translateY(-14px) scale(1.05); }
+    100% { transform: translateX(-52%) translateY(12px) scale(0.98); }
+  }
+  @keyframes meshSpinA {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  @keyframes meshSpinB {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  .signature-portrait {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 4 / 5;
+    display: block;
+    /* no border, no boundary — soft fade at the top edge so it rises out of the glow */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.25) 10%, rgba(0,0,0,0.85) 25%, #000 45%, #000 100%);
+            mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.25) 10%, rgba(0,0,0,0.85) 25%, #000 45%, #000 100%);
+    animation: portraitRise 1.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .signature-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.95) contrast(1.02);
+  }
+
+  @keyframes portraitRise {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* The line below — the portrait stems from this */
+  .signature-baseline {
+    margin-top: 0;
+    border-top: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+  }
+  .signature-baseline::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 1px;
+    width: 40%;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      var(--accent) 30%,
+      var(--rotary-blue-soft) 70%,
+      transparent 100%);
+    animation: baselineSweep 6s ease-in-out infinite;
+  }
+  @keyframes baselineSweep {
+    0%   { transform: translateX(-30%); opacity: 0; }
+    20%  { opacity: 0.9; }
+    80%  { opacity: 0.9; }
+    100% { transform: translateX(250%); opacity: 0; }
+  }
+
+  @media (max-width: 900px) {
+    .signature-body { grid-template-columns: 1fr; gap: 40px; align-items: stretch; min-height: 0; }
+    .signature-portrait-wrap { min-height: 640px; }
+    .signature-portrait { max-width: 520px; }
+    .signature-mesh { width: 520px; height: 520px; }
+    .signature-left { padding-bottom: 0; }
+  }
+  @media (max-width: 640px) {
+    .signature-portrait-wrap { min-height: 480px; }
+    .signature-portrait { max-width: 360px; }
+    .signature-mesh { width: 420px; height: 420px; }
+  }
+
+  /* ---------- Extra motion ---------- */
+
+  /* Hero lockup gentle float */
+  .hero-lockup {
+    animation: heroFloat 7s ease-in-out infinite, riseIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.05s backwards;
+    transform-origin: center;
+  }
+  @keyframes heroFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50%      { transform: translateY(-6px) rotate(-0.25deg); }
+  }
+
+  /* Rotary accent bar soft pulse */
+  .rotary-accent-bar {
+    animation: barPulse 3.2s ease-in-out infinite;
+  }
+  @keyframes barPulse {
+    0%, 100% { opacity: 0.6; width: 28px; }
+    50%      { opacity: 1;   width: 40px; }
+  }
+
+  /* Eyebrow fade-in chain */
+  .eyebrow {
+    animation: eyebrowFade 0.9s ease-out backwards;
+  }
+  @keyframes eyebrowFade {
+    from { opacity: 0; letter-spacing: 0.15em; }
+    to   { opacity: 1; letter-spacing: 0.25em; }
+  }
+
+  /* Tier card shimmer border sweep */
+  .tier-card {
+  }
+  .tier-card::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 6px;
+    padding: 1px;
+    background: linear-gradient(130deg,
+      transparent 30%,
+      rgba(247, 168, 27, 0.55) 45%,
+      rgba(23, 69, 143, 0.55) 55%,
+      transparent 70%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .tier-card:hover::after {
+    opacity: 1;
+    animation: borderSweep 2.8s linear infinite;
+  }
+  @keyframes borderSweep {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  /* Staggered highlight fade in when card comes into view */
+  .tier-card .tier-highlights li {
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .tier-cards.in .tier-card .tier-highlights li { opacity: 1; transform: translateX(0); }
+  .tier-cards.in .tier-card .tier-highlights li:nth-child(1) { transition-delay: 0.20s; }
+  .tier-cards.in .tier-card .tier-highlights li:nth-child(2) { transition-delay: 0.30s; }
+  .tier-cards.in .tier-card .tier-highlights li:nth-child(3) { transition-delay: 0.40s; }
+  .tier-cards.in .tier-card .tier-highlights li:nth-child(4) { transition-delay: 0.50s; }
+
+  /* Price drift-in */
+  .tier-card .tier-price {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.7s ease 0.15s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+  }
+  .tier-cards.in .tier-card .tier-price { opacity: 1; transform: translateY(0); }
+
+  /* Featured badge subtle pulse */
+  .tier-card.featured .tier-badge {
+    animation: badgePulse 2.6s ease-in-out infinite;
+  }
+  @keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(23, 69, 143, 0.7); }
+    50%      { box-shadow: 0 0 0 8px rgba(23, 69, 143, 0.0); }
+  }
+
+  /* Tier CTA arrow slide */
+  .tier-card .tier-cta::after {
+    display: inline-block;
+    transform: translateX(0);
+  }
+  .tier-card:hover .tier-cta::after {
+    animation: arrowNudge 1.2s ease-in-out infinite;
+  }
+  @keyframes arrowNudge {
+    0%, 100% { transform: translateX(0); }
+    50%      { transform: translateX(4px); }
+  }
+
+  /* Deliverables row slide-in on hover */
+  .deliverables li {
+    transition: padding-left 0.3s ease, background 0.3s ease;
+  }
+  .deliverables li:hover {
+    padding-left: 8px;
+    background: linear-gradient(90deg, rgba(247,168,27,0.04), transparent);
+  }
+
+  /* Comparison table row hover lift */
+  .compare tbody tr {
+    transition: background 0.25s ease;
+  }
+  .compare tbody tr:hover {
+    background: rgba(247, 168, 27, 0.04);
+  }
+
+  /* Term cards hover lift */
+  .term {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease;
+  }
+  .term:hover {
+    transform: translateY(-4px);
+    background: var(--bg-elev);
+  }
+  .term .num {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .term:hover .num {
+    color: var(--rotary-blue-soft);
+    transform: scale(1.05);
+  }
+
+  /* Closing title em shimmer */
+  .closing-title em {
+    background: linear-gradient(90deg,
+      var(--accent) 0%,
+      #ffd06b 35%,
+      var(--rotary-blue-soft) 65%,
+      var(--accent) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: emShimmer 5s linear infinite;
+  }
+  @keyframes emShimmer {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  /* Wordmark / logo-plate subtle hover tilt */
+  .logo-plate {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .logo-plate:hover { transform: scale(1.02) rotate(-0.5deg); }
+
+  /* Scroll-up FAB-style arrow (tiny motion anchor) — none, keep it subtle */
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001s !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001s !important;
+    }
+  }
+
+  /* ---------- Reveal animation ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hero entrance */
+  @keyframes riseIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-title, .hero-sub, .hero-stamp {
+    animation: riseIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+  .hero-title { animation-delay: 0.1s; }
+  .hero-sub { animation-delay: 0.35s; }
+  .hero-stamp { animation-delay: 0.5s; }
+
+
+  /* ---------- Mobile/functionality audit fixes ---------- */
+  img, svg, video { max-width: 100%; height: auto; }
+
+  .compare {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: stable;
+  }
+
+  .tier-cards::-webkit-scrollbar,
+  .compare::-webkit-scrollbar { height: 8px; }
+
+  .tier-cards::-webkit-scrollbar-thumb,
+  .compare::-webkit-scrollbar-thumb {
+    background: var(--rule-bright);
+    border-radius: 999px;
+  }
+
+  @media (max-width: 768px) {
+    body { overflow-x: clip; }
+    .top-bar { position: sticky; }
+    .hero-title { font-size: clamp(2.7rem, 14vw, 4.4rem); }
+    .section-head { margin-bottom: 44px; }
+    .intro-text { font-size: 1rem; }
+    .pkg { padding: 56px 0; }
+    .pkg-main h3 { font-size: 1.35rem; margin-bottom: 28px; }
+    .pkg-footnote { padding: 18px 20px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 28px; }
+    .signature-contact { gap: 24px; }
+    .signature-contact .contact-item { min-width: min(100%, 220px); }
+  }
+
+  @media (max-width: 480px) {
+    .container { padding: 0 18px; }
+    .hero { padding: 62px 0 52px; }
+    .tiers-section { padding: 72px 0; }
+    .display { letter-spacing: -0.035em; }
+    .deliverables li { grid-template-columns: 34px 1fr; }
+    .deliverables li .body .tag { display: block; margin: 0 0 4px; }
+    .term { padding: 32px 24px; min-height: auto; }
+    .closing { padding: 88px 0 56px; }
+    .closing-title { margin-bottom: 48px; }
+    .signature-block { padding-top: 52px; margin-top: 56px; }
+    .signature-portrait-wrap { min-height: 420px; }
+    .signature-portrait { max-width: 320px; }
+    .signature-mesh { width: 360px; height: 360px; }
+  }
+
+  @media (hover: none) {
+    .tier-card:hover,
+    .tier-card.featured:hover,
+    .term:hover,
+    .logo-plate:hover { transform: none; }
+    .deliverables li:hover { padding-left: 0; }
+  }
+
+
+
+  /* ---------- Mobile-only 3D tier carousel ---------- */
+  .tier-carousel-controls { display: none; }
+
+  @media (max-width: 900px) {
+    .tier-carousel-controls {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin: -18px 0 18px;
+      position: relative;
+      z-index: 8;
+    }
+
+    .tier-carousel-btn {
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--rule-bright);
+      border-radius: 999px;
+      background: rgba(18, 18, 23, 0.86);
+      color: var(--ink);
+      font-size: 1.7rem;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.34);
+      transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .tier-carousel-btn:hover,
+    .tier-carousel-btn:focus-visible {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--bg-card);
+      outline: none;
+      transform: translateY(-2px);
+    }
+
+    .tier-cards {
+      display: block;
+      position: relative;
+      /* JS updates this to the active card's real height so the full card is never clipped. */
+      height: 620px;
+      overflow: visible;
+      padding: 26px 0 54px;
+      margin: 0;
+      perspective: 1100px;
+      transform-style: preserve-3d;
+      scroll-snap-type: none;
+      -webkit-overflow-scrolling: auto;
+    }
+
+    .tier-cards::-webkit-scrollbar { display: none; }
+    .tier-cards { -ms-overflow-style: none; scrollbar-width: none; }
+
+    .tier-card {
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      width: min(76vw, 340px);
+      min-width: 0;
+      max-width: none;
+      min-height: 390px;
+      padding: 32px 24px 28px;
+      opacity: 0;
+      pointer-events: none;
+      filter: blur(4px) saturate(0.75);
+      transform-origin: center center;
+      backface-visibility: hidden;
+      transition:
+        transform 0.58s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 0.45s ease,
+        filter 0.45s ease,
+        border-color 0.3s ease,
+        box-shadow 0.45s ease;
+      will-change: transform, opacity, filter;
+    }
+
+    .tier-card.is-active {
+      opacity: 1;
+      pointer-events: auto;
+      filter: blur(0) saturate(1);
+      transform: translateX(-50%) translateZ(80px) rotateY(0deg) scale(1);
+      z-index: 5;
+      border-color: rgba(247, 168, 27, 0.75);
+      box-shadow:
+        0 14px 34px rgba(0, 0, 0, 0.46),
+        0 38px 90px -24px rgba(247, 168, 27, 0.36);
+    }
+
+    .tier-card.is-prev {
+      opacity: 0.48;
+      filter: blur(2.2px) saturate(0.72);
+      transform: translateX(calc(-50% - min(44vw, 205px))) translateZ(-150px) rotateY(34deg) scale(0.82);
+      z-index: 3;
+    }
+
+    .tier-card.is-next {
+      opacity: 0.48;
+      filter: blur(2.2px) saturate(0.72);
+      transform: translateX(calc(-50% + min(44vw, 205px))) translateZ(-150px) rotateY(-34deg) scale(0.82);
+      z-index: 3;
+    }
+
+    .tier-card.is-hidden-left {
+      opacity: 0;
+      transform: translateX(calc(-50% - min(62vw, 280px))) translateZ(-260px) rotateY(46deg) scale(0.72);
+      z-index: 1;
+    }
+
+    .tier-card.is-hidden-right {
+      opacity: 0;
+      transform: translateX(calc(-50% + min(62vw, 280px))) translateZ(-260px) rotateY(-46deg) scale(0.72);
+      z-index: 1;
+    }
+
+    .tier-card.featured,
+    .tier-card.featured:hover,
+    .tier-card:hover {
+      transform: inherit;
+    }
+
+    .tier-card.is-active:hover {
+      transform: translateX(-50%) translateZ(92px) rotateY(0deg) scale(1.015);
+    }
+
+    .tier-card.is-prev:hover {
+      transform: translateX(calc(-50% - min(44vw, 205px))) translateZ(-150px) rotateY(34deg) scale(0.82);
+    }
+
+    .tier-card.is-next:hover {
+      transform: translateX(calc(-50% + min(44vw, 205px))) translateZ(-150px) rotateY(-34deg) scale(0.82);
+    }
+
+    /* Audit fix: the featured card has its own desktop lift. Re-assert mobile
+       carousel transforms so the active Growth card remains centered in 3D. */
+    .tier-card.featured.is-active {
+      transform: translateX(-50%) translateZ(80px) rotateY(0deg) scale(1);
+    }
+
+    .tier-card.featured.is-prev {
+      transform: translateX(calc(-50% - min(44vw, 205px))) translateZ(-150px) rotateY(34deg) scale(0.82);
+    }
+
+    .tier-card.featured.is-next {
+      transform: translateX(calc(-50% + min(44vw, 205px))) translateZ(-150px) rotateY(-34deg) scale(0.82);
+    }
+
+    .tier-card.featured.is-active:hover {
+      transform: translateX(-50%) translateZ(92px) rotateY(0deg) scale(1.015);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .tier-carousel-controls { margin-top: -10px; }
+    .tier-cards { height: 620px; padding-bottom: 58px; }
+    .tier-card {
+      width: min(82vw, 340px);
+      min-height: auto;
+      padding: 28px 20px 28px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .tier-card {
+      width: min(86vw, 320px);
+      padding: 24px 18px 26px;
+    }
+    .tier-card .tier-name { font-size: 1.65rem; }
+    .tier-card .tier-price { font-size: 2.2rem; }
+    .tier-card .tier-tagline,
+    .tier-card .tier-highlights li { font-size: 0.86rem; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <a class="logo-plate" href="#" aria-label="Rotary E-Club of East Africa">
+      <img src="rotary-logo-dark.png" alt="Rotary E-Club of East Africa" style="height:40px;">
+    </a>
+    <div class="top-meta">
+      <span class="mono">Services · 2026</span>
+      <span class="mono">Prepared for · Rotary E-Club of East Africa</span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-lockup" aria-label="Rotary E-Club of East Africa · The Magic of Rotary">
+      <img src="rotary-magic-dark.png" alt="Rotary E-Club of East Africa · The Magic of Rotary">
+    </div>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 28px;"><span class="rotary-accent-bar"></span>Proposal · Social Media Management</div>
+        <h1 class="display hero-title">Three tiers. <br>Built for organizations that <em>take their presence seriously.</em></h1>
+        <p class="hero-sub">Every package is priced on deliverables, not feature inflation. Strategy, execution, and measurement are standard. Choose the tier that matches your ambition — and the magic you want to make visible.</p>
+      </div>
+      <div class="hero-stamp">
+        <div class="mono">Prepared by</div>
+        <div class="mono" style="color: var(--ink); margin-top:4px;">Lucca</div>
+        <div class="mono" style="margin-top: 18px;">Prepared for</div>
+        <div class="mono" style="color: var(--ink); margin-top:4px;">Rotary E-Club of East Africa</div>
+        <div class="mono" style="margin-top: 18px;">Edition 01 / 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="container">
+    <div class="intro-body reveal">
+      <div class="eyebrow">Positioning</div>
+      <div class="intro-text">
+        <p>These three packages are built differently. Each tier solves a specific problem — presence, growth, or full-stack digital presence — and the deliverables are scoped to be actually deliverable, consistently, for the price. <strong>No vanity services. No unused seats at the table.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIER CARDS (floating summary) -->
+<section class="tiers-section" id="tiers">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="rotary-accent-bar"></span>The three tiers</div>
+      <h2 class="display section-title">Pick a starting point.</h2>
+    </div>
+
+    <div class="tier-carousel-controls" aria-label="Package carousel controls">
+      <button class="tier-carousel-btn" type="button" data-tier-dir="prev" aria-label="Show previous package">‹</button>
+      <button class="tier-carousel-btn" type="button" data-tier-dir="next" aria-label="Show next package">›</button>
+    </div>
+
+    <div class="tier-cards reveal" tabindex="0" aria-label="Package tier cards carousel on small screens.">
+
+      <article class="tier-card" id="card-starter">
+        <div class="tier-no">01 · Starter</div>
+        <div class="tier-name">Starter</div>
+        <p class="tier-tagline">A professional, consistent presence — for clubs and local teams finding their voice.</p>
+        <div class="tier-price">$600</div>
+        <div class="tier-price-unit">per month</div>
+        <ul class="tier-highlights">
+          <li>2 platforms · Instagram &amp; Facebook</li>
+          <li>12 posts · 20 stories per month</li>
+          <li>Monthly calendar + performance report</li>
+          <li>1 strategy call per month</li>
+        </ul>
+        <a class="tier-cta" href="#starter">See full scope</a>
+      </article>
+
+      <article class="tier-card featured" id="card-growth">
+        <div class="tier-badge">Recommended</div>
+        <div class="tier-no">02 · Growth</div>
+        <div class="tier-name">Growth</div>
+        <p class="tier-tagline">For organizations actively growing audience and running promotions around projects and events.</p>
+        <div class="tier-price">$1,000</div>
+        <div class="tier-price-unit">per month</div>
+        <ul class="tier-highlights">
+          <li>3 platforms + X on request</li>
+          <li>20 posts · 4 videos · 30 stories / mo</li>
+          <li>Bilingual captions · AI photo editing</li>
+          <li>Managed ad spend up to $100 / mo</li>
+        </ul>
+        <a class="tier-cta" href="#growth">See full scope</a>
+      </article>
+
+      <article class="tier-card" id="card-signature">
+        <div class="tier-no">03 · Signature</div>
+        <div class="tier-name">Signature</div>
+        <p class="tier-tagline">A full digital presence — for established brands, NGOs, and regional players.</p>
+        <div class="tier-price">$1,500</div>
+        <div class="tier-price-unit">per month</div>
+        <ul class="tier-highlights">
+          <li>5 platforms, platform-tailored</li>
+          <li>28 posts · 10 videos · 45 stories / mo</li>
+          <li>Weekly reports + monthly exec summary</li>
+          <li>Priority WhatsApp · quarterly workshop</li>
+        </ul>
+        <a class="tier-cta" href="#signature">See full scope</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<div class="packages">
+
+  <!-- STARTER -->
+  <article class="pkg reveal" id="starter">
+    <div class="container">
+      <div class="pkg-inner">
+        <aside class="pkg-side">
+          <div class="pkg-number">01</div>
+          <div class="eyebrow" style="margin-bottom: 12px;">Starter</div>
+          <div class="pkg-price">$600 <span class="small">/ month</span></div>
+          <div class="pkg-platforms">
+            <span class="mono">Platforms</span>
+            <div class="pkg-platforms-list">Instagram <span style="color:var(--ink-mute)">·</span> Facebook</div>
+          </div>
+        </aside>
+
+        <div class="pkg-main">
+          <h3>For local businesses that want a professional, consistent presence.</h3>
+
+          <ul class="deliverables">
+            <li><span class="idx">01</span><span class="body"><span class="tag">Posts</span>12 posts per month — 3 per week. Static graphics and carousels.</span></li>
+            <li><span class="idx">02</span><span class="body"><span class="tag">Stories</span>20 stories per month.</span></li>
+            <li><span class="idx">03</span><span class="body"><span class="tag">Graphics</span>4 event / occasion graphics per month — birthdays, holidays, announcements.</span></li>
+            <li><span class="idx">04</span><span class="body"><span class="tag">Copy</span>Caption writing in English or Swahili (pick one).</span></li>
+            <li><span class="idx">05</span><span class="body"><span class="tag">Engagement</span>Community management — comments and DMs, Mon–Fri, 24hr response.</span></li>
+            <li><span class="idx">06</span><span class="body"><span class="tag">Planning</span>Monthly content calendar delivered for approval.</span></li>
+            <li><span class="idx">07</span><span class="body"><span class="tag">Insight</span>Monthly performance report.</span></li>
+            <li><span class="idx">08</span><span class="body"><span class="tag">Strategy</span>One strategy call per month (30 minutes).</span></li>
+          </ul>
+
+          <div class="pkg-footnote">
+            <strong>Add-ons available</strong> — Bilingual captions, extra posts, video editing, and more. Priced on scope — happy to discuss.
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- GROWTH -->
+  <article class="pkg reveal" id="growth">
+    <div class="container">
+      <div class="pkg-inner">
+        <aside class="pkg-side">
+          <div class="pkg-number">02</div>
+          <div class="eyebrow" style="margin-bottom: 12px;">Growth</div>
+          <div class="pkg-price">$1,000 <span class="small">/ month</span></div>
+          <div class="pkg-platforms">
+            <span class="mono">Platforms</span>
+            <div class="pkg-platforms-list">Instagram <span style="color:var(--ink-mute)">·</span> Facebook <span style="color:var(--ink-mute)">·</span> TikTok <span style="color:var(--ink-mute)">·</span> <em style="color:var(--ink-mute); font-style: italic;">X on request</em></div>
+          </div>
+        </aside>
+
+        <div class="pkg-main">
+          <h3>For brands actively growing their audience and starting to run promotions.</h3>
+
+          <ul class="deliverables">
+            <li><span class="idx">01</span><span class="body"><span class="tag">Posts</span>20 posts per month, platform-optimized.</span></li>
+            <li><span class="idx">02</span><span class="body"><span class="tag">Video</span>4 short-form videos per month. Client provides raw footage; we edit, caption, and publish.</span></li>
+            <li><span class="idx">03</span><span class="body"><span class="tag">Stories</span>30 stories per month with interactive elements — polls, Q&amp;A, countdowns.</span></li>
+            <li><span class="idx">04</span><span class="body"><span class="tag">Graphics</span>8 event / occasion graphics per month (2 per week).</span></li>
+            <li><span class="idx">05</span><span class="body"><span class="tag">AI edit</span>AI-assisted photo editing — background cleanup, product retouching, feed consistency (up to 20 images / month).</span></li>
+            <li><span class="idx">06</span><span class="body"><span class="tag">Copy</span>Bilingual captions — Swahili and English.</span></li>
+            <li><span class="idx">07</span><span class="body"><span class="tag">Planning</span>Bi-weekly content calendar.</span></li>
+            <li><span class="idx">08</span><span class="body"><span class="tag">Engagement</span>Community management Mon–Sat, 12hr response.</span></li>
+            <li><span class="idx">09</span><span class="body"><span class="tag">Paid</span>Post boosting — up to $100 / month ad spend managed. Client covers spend.</span></li>
+            <li><span class="idx">10</span><span class="body"><span class="tag">Research</span>Hashtag and trend research.</span></li>
+            <li><span class="idx">11</span><span class="body"><span class="tag">Insight</span>Bi-weekly performance reports.</span></li>
+            <li><span class="idx">12</span><span class="body"><span class="tag">Strategy</span>Two strategy calls per month (45 minutes each).</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- SIGNATURE -->
+  <article class="pkg reveal" id="signature">
+    <div class="container">
+      <div class="pkg-inner">
+        <aside class="pkg-side">
+          <div class="pkg-number">03</div>
+          <div class="eyebrow" style="margin-bottom: 12px;">Signature</div>
+          <div class="pkg-price">$1,500 <span class="small">/ month</span></div>
+          <div class="pkg-platforms">
+            <span class="mono">Platforms</span>
+            <div class="pkg-platforms-list">Instagram <span style="color:var(--ink-mute)">·</span> Facebook <span style="color:var(--ink-mute)">·</span> TikTok <span style="color:var(--ink-mute)">·</span> LinkedIn <span style="color:var(--ink-mute)">·</span> X <em style="color:var(--ink-mute);">or</em> YouTube Shorts</div>
+          </div>
+        </aside>
+
+        <div class="pkg-main">
+          <h3>For established brands, hotels, NGOs, and regional players who need a full digital presence.</h3>
+
+          <ul class="deliverables">
+            <li><span class="idx">01</span><span class="body"><span class="tag">Posts</span>28 posts per month, genuinely platform-tailored. Not cross-posted.</span></li>
+            <li><span class="idx">02</span><span class="body"><span class="tag">Video</span>10 short-form videos per month.</span></li>
+            <li><span class="idx">03</span><span class="body"><span class="tag">Stories</span>45 stories per month, fully produced.</span></li>
+            <li><span class="idx">04</span><span class="body"><span class="tag">Graphics</span>12 custom event / occasion graphics per month, designed from scratch.</span></li>
+            <li><span class="idx">05</span><span class="body"><span class="tag">AI edit</span>AI-assisted photo editing — unlimited within reasonable use (~40 images / month).</span></li>
+            <li><span class="idx">06</span><span class="body"><span class="tag">Copy</span>Bilingual captions, voice-matched per platform.</span></li>
+            <li><span class="idx">07</span><span class="body"><span class="tag">Planning</span>Monthly content strategy document and calendar.</span></li>
+            <li><span class="idx">08</span><span class="body"><span class="tag">Engagement</span>Community management 7 days / week, 6hr response, with PR-escalation protocol.</span></li>
+            <li><span class="idx">09</span><span class="body"><span class="tag">Paid</span>Full campaign management — up to $500 / month ad spend managed. Client covers spend.</span></li>
+            <li><span class="idx">10</span><span class="body"><span class="tag">Intel</span>Competitor and trend intelligence report, monthly.</span></li>
+            <li><span class="idx">11</span><span class="body"><span class="tag">Insight</span>Weekly performance reports + monthly executive summary.</span></li>
+            <li><span class="idx">12</span><span class="body"><span class="tag">Strategy</span>Four strategy calls per month + priority WhatsApp access.</span></li>
+            <li><span class="idx">13</span><span class="body"><span class="tag">Workshop</span>Quarterly content planning workshop.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<!-- COMPARISON -->
+<section id="compare">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">At a glance</div>
+      <h2 class="display section-title">Side by side, honestly.</h2>
+    </div>
+
+    <div class="compare reveal" tabindex="0" aria-label="Package comparison table. Scroll horizontally on small screens.">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tier">01 · Starter</th>
+            <th class="tier">02 · Growth</th>
+            <th class="tier">03 · Signature</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Monthly fee</th><td class="price">$600</td><td class="price">$1,000</td><td class="price">$1,500</td></tr>
+          <tr><th>Platforms</th><td>2</td><td>3 (+1 on request)</td><td>5</td></tr>
+          <tr><th>Posts / month</th><td>12</td><td>20</td><td>28</td></tr>
+          <tr><th>Videos / month</th><td>—</td><td>4</td><td>10</td></tr>
+          <tr><th>Stories / month</th><td>20</td><td>30</td><td>45</td></tr>
+          <tr><th>Event graphics</th><td>4</td><td>8</td><td>12 (custom)</td></tr>
+          <tr><th>AI photo editing</th><td>—</td><td>20 images</td><td>~40 images</td></tr>
+          <tr><th>Paid promotion</th><td>—</td><td>up to $100 / mo</td><td>up to $500 / mo</td></tr>
+          <tr><th>Response time</th><td>24 hr · Mon–Fri</td><td>12 hr · Mon–Sat</td><td>6 hr · 7 days</td></tr>
+          <tr><th>Strategy calls / mo</th><td>1 (30 min)</td><td>2 (45 min)</td><td>4 + WhatsApp</td></tr>
+          <tr><th>Reporting</th><td>Monthly</td><td>Bi-weekly</td><td>Weekly + exec summary</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section id="terms">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Fine print, upfront</div>
+      <h2 class="display section-title">Three things worth saying clearly.</h2>
+    </div>
+
+    <div class="terms-grid reveal">
+      <div class="term">
+        <div class="num">01</div>
+        <h4>Onboarding</h4>
+        <p>A one-time fee applies — $150 Starter, $300 Growth, $500 Signature. Covers brand audit, tone-of-voice document, channel setup, and template system. Month one is foundational; this keeps it separate from ongoing work.</p>
+      </div>
+      <div class="term">
+        <div class="num">02</div>
+        <h4>Minimum term</h4>
+        <p>Three months on Starter. Six months on Growth and Signature. Social media compounds — short engagements produce short results, and no honest agency promises otherwise. Commitment is priced in.</p>
+      </div>
+      <div class="term">
+        <div class="num">03</div>
+        <h4>Ad spend</h4>
+        <p>All ad spend figures are <em>managed</em> spend. Client pays platforms directly or reimburses. The management fee is for strategy, creative, optimization — separate from the media cost itself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow" style="margin-bottom: 40px;"><span class="rotary-accent-bar"></span>Next step</div>
+      <h2 class="display closing-title">Let's build something <em>worth following.</em></h2>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="mono">Email</span>
+          <div class="val">bryanlucasfrad@gmail.com</div>
+        </div>
+        <div class="contact-item">
+          <span class="mono">Phone</span>
+          <div class="val">+255 745 683 731</div>
+        </div>
+      </div>
+
+      <!-- Signature / Brian portrait block -->
+      <div class="signature-block reveal">
+        <div class="signature-body">
+          <div class="signature-left">
+            <div class="signature-meta">
+              <div class="eyebrow"><span class="rotary-accent-bar"></span>Your point of contact</div>
+              <div class="signature-name">Lucca</div>
+              <div class="signature-role">Social media strategy &amp; production — Proposal prepared personally for the Rotary E-Club of East Africa.</div>
+            </div>
+            <div class="signature-contact">
+              <div class="contact-item">
+                <span class="mono">Email</span>
+                <div class="val">bryanlucasfrad@gmail.com</div>
+              </div>
+              <div class="contact-item">
+                <span class="mono">Phone</span>
+                <div class="val">+255 745 683 731</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="signature-portrait-wrap">
+            <div class="signature-mesh" aria-hidden="true"></div>
+            <img src="Brian.png" alt="Lucca" class="signature-portrait">
+          </div>
+        </div>
+
+        <div class="signature-baseline" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer>
+      <span class="mono">© 2026 · Lucca</span>
+    </footer>
+  </div>
+</section>
+
+<script>
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+
+    setTierCarouselHeight(isMobile);
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Mobile-only 3D tier carousel
+  const tierCarousel = document.querySelector('.tier-cards');
+  const tierCards = Array.from(document.querySelectorAll('.tier-card'));
+  const tierButtons = document.querySelectorAll('[data-tier-dir]');
+  const mobileCarouselQuery = window.matchMedia('(max-width: 900px)');
+  let activeTierIndex = 1; // Start with the recommended Growth package in focus.
+  let touchStartX = 0;
+
+  function wrapTierIndex(index) {
+    return (index + tierCards.length) % tierCards.length;
+  }
+
+  function setTierCarouselHeight(isMobile) {
+    if (!tierCarousel) return;
+    if (!isMobile) {
+      tierCarousel.style.height = '';
+      return;
+    }
+
+    // The cards are absolutely positioned on mobile, so the parent needs an
+    // explicit height based on whichever card is currently active. This keeps
+    // the next section from cutting through the bottom of the card.
+    window.requestAnimationFrame(() => {
+      const activeCard = tierCards[activeTierIndex];
+      if (!activeCard) return;
+      const badge = activeCard.querySelector('.tier-badge');
+      const badgeAllowance = badge ? Math.ceil(badge.offsetHeight / 2) + 18 : 0;
+      const verticalPadding = 96 + badgeAllowance;
+      tierCarousel.style.height = `${Math.ceil(activeCard.offsetHeight + verticalPadding)}px`;
+    });
+  }
+
+  function updateTierCarousel() {
+    const isMobile = mobileCarouselQuery.matches;
+
+    tierCards.forEach((card, index) => {
+      card.classList.remove('is-active', 'is-prev', 'is-next', 'is-hidden-left', 'is-hidden-right');
+      card.removeAttribute('aria-hidden');
+      card.tabIndex = 0;
+
+      if (!isMobile) return;
+
+      const prevIndex = wrapTierIndex(activeTierIndex - 1);
+      const nextIndex = wrapTierIndex(activeTierIndex + 1);
+
+      if (index === activeTierIndex) {
+        card.classList.add('is-active');
+        card.setAttribute('aria-current', 'true');
+        card.tabIndex = 0;
+      } else if (index === prevIndex) {
+        card.classList.add('is-prev');
+        card.removeAttribute('aria-current');
+        card.setAttribute('aria-hidden', 'true');
+        card.tabIndex = -1;
+      } else if (index === nextIndex) {
+        card.classList.add('is-next');
+        card.removeAttribute('aria-current');
+        card.setAttribute('aria-hidden', 'true');
+        card.tabIndex = -1;
+      } else {
+        card.classList.add(index < activeTierIndex ? 'is-hidden-left' : 'is-hidden-right');
+        card.removeAttribute('aria-current');
+        card.setAttribute('aria-hidden', 'true');
+        card.tabIndex = -1;
+      }
+    });
+  }
+
+  function moveTierCarousel(direction) {
+    activeTierIndex = wrapTierIndex(activeTierIndex + direction);
+    updateTierCarousel();
+  }
+
+  tierButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      moveTierCarousel(button.dataset.tierDir === 'next' ? 1 : -1);
+    });
+  });
+
+  if (tierCarousel) {
+    tierCarousel.addEventListener('keydown', (event) => {
+      if (!mobileCarouselQuery.matches) return;
+      if (event.key === 'ArrowRight') { event.preventDefault(); moveTierCarousel(1); }
+      if (event.key === 'ArrowLeft') { event.preventDefault(); moveTierCarousel(-1); }
+    });
+
+    tierCarousel.addEventListener('touchstart', (event) => {
+      touchStartX = event.touches[0].clientX;
+    }, { passive: true });
+
+    tierCarousel.addEventListener('touchend', (event) => {
+      if (!mobileCarouselQuery.matches) return;
+      const deltaX = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(deltaX) > 42) moveTierCarousel(deltaX < 0 ? 1 : -1);
+    }, { passive: true });
+  }
+
+  if (mobileCarouselQuery.addEventListener) {
+    mobileCarouselQuery.addEventListener('change', updateTierCarousel);
+  } else if (mobileCarouselQuery.addListener) {
+    mobileCarouselQuery.addListener(updateTierCarousel);
+  }
+
+  window.addEventListener('resize', updateTierCarousel);
+  window.addEventListener('load', updateTierCarousel);
+
+  if (tierCarousel && tierCards.length && tierButtons.length) {
+    updateTierCarousel();
+  }
+</script>
+
+</body>
+</html>
