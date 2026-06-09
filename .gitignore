@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+
+# Backups
+*.bak
+
+# Intermediary image processing files
+Logo_floodfill.png
+Logo_floodfill_preview.png
+Logo_rembg.png
+Logo_rembg_preview.png
+
+# Scraped assets / download directories
+Home - Travel Booking Guide_files/
